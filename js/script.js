@@ -20,3 +20,7 @@ function Ticket (childPrice, studentPrice, adultPrice, seniorPrice) {
 Movie.prototype.addTicket = function(ticket) {
   this.tickets = ticket;
 }
+
+MovieTheater.prototype.addMovie = function(movie) {
+  this.movies = movie;
+}

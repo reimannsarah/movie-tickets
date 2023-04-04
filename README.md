@@ -32,3 +32,12 @@ Code: johnWick.addTicket(price);
 johnWick;
 Expected Output: Movie: {name: 'John Wick', showtimes: Array(4), firstRelease: true, tickets: {child: 0, student: 5, adult: 8, senior: 4}}
 
+//
+Describe: addMovie (movie);
+
+Test: "It should add the Movie object to the MovieTheater object"
+Code: let theater = new MovieTheater ();
+let johnWick = new Movie ("John Wick", ["11am", "1pm", "6pm", "10pm"], true);
+theater.addMovie(movie);
+theater;
+Expected Output: Movies: {Movie: {name: 'John Wick', showtimes: Array(4), firstRelease: true, tickets: {child: 0, student: 5, adult: 8, senior: 4}};
