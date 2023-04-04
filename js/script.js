@@ -51,23 +51,25 @@ function handleFormSubmit(event) {
   let ticketChoice = document.querySelector("#ticket-options").value.toLowerCase();
 
   const ticketKeys = Object.keys(ticket);
-  ticketKeys.forEach(function (key) {
-    if(key === ticketChoice){
-      if (movie.firstRelease);
-      displ;
-    }
-  });
+  ticketKeys.forEach(function (ticketKey) {
+    // if (movie.firstRelease == true && movie.matinee == false){
+      // let price = displayPrice(ticketKey);
+      // console.log(price);
+
+    });
+    // if(key === ticketChoice){
+    //   displayPrice(key, )
+    //   console.log(ticket[key]);
+    // }
+  // });
 }
 
-const displayPriceDiv = document.querySelector("#displayPrice");
+let displayPriceDiv = document.querySelector("#displayPrice");
 let pPrice = document.createElement("p");
-
-function newReleasePrice() {
-  pPrice.append(`Dennis quoted you for $${ticket[key] + 2} :)`);
-}
 
 function displayPrice(key) {
   pPrice.append(`Dennis quoted you for $${ticket[key]} :)`);
+  console.log(pPrice);
   displayPriceDiv.append(pPrice);
 }
 
