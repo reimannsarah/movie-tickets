@@ -42,7 +42,6 @@ movieArray.map(function(movie){
 
 
 
-
 // UI Logic
 
 function handleFormSubmit(event) {
@@ -52,11 +51,24 @@ function handleFormSubmit(event) {
   let ticketChoice = document.querySelector("#ticket-options").value.toLowerCase();
 
   const ticketKeys = Object.keys(ticket);
-  ticketKeys.forEach(key){
+  ticketKeys.forEach(function (key) {
     if(key === ticketChoice){
-      
+      if (movie.firstRelease);
+      displ;
     }
-  }
+  });
+}
+
+const displayPriceDiv = document.querySelector("#displayPrice");
+let pPrice = document.createElement("p");
+
+function newReleasePrice() {
+  pPrice.append(`Dennis quoted you for $${ticket[key] + 2} :)`);
+}
+
+function displayPrice(key) {
+  pPrice.append(`Dennis quoted you for $${ticket[key]} :)`);
+  displayPriceDiv.append(pPrice);
 }
 
 
