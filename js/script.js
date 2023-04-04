@@ -1,0 +1,3 @@
+function MovieTheater () {
+  this.movies = {};
+}
