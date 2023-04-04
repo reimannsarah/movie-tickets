@@ -1,0 +1,12 @@
+.movieimage {
+  width: 30%;
+}
+
+#movie-container{
+  float: left;
+  width: 50%;
+}
+
+#form{
+  float: right;
+}

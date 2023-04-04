@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Tickets</title>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Tickets</title>
 </head>
+
 <body>
-    
+  <h1>Daddy's Drama Drive-In</h1>
+  <div id="movie-container">
+    <div class="movie-div">
+      <h3>Cocaine Bear</h3>
+      <img class = movieimage src="img/cocaine.jpg" alt="Image of Cocaine Bear movie poster">
+    </div>
+    <div class="movie-div">
+      <h3>John Wick: Chapter 4</h3>
+      <img class = movieimage src="img/johnwick.jpg" alt="Image of John Wick movie poster">
+    </div>
+    <div class="movie-div">
+      <h3>Snatch</h3>
+      <img class = movieimage src="img/snatch.jpg" alt="Image of Snatch movie poster">
+    </div>
+    <div class="movie-div">
+      <h3>Avatar: Way of Water</h3>
+      <img class = movieimage src="img/avatar.jpg" alt="Image of Avatar: Way of Water movie poster">
+    </div>
+  </div>
+
+  <form id="form">
+    <label for="movie">Movies:</label>
+    <select name="" id="movie-options">
+      <option value="">Please select a drama for Daddy</option>
+      <option value="1">Cocaine Bear</option>
+      <option value="2">John Wick: Chapter 4</option>
+      <option value="3">Snatch</option>
+      <option value="4">Avatar</option>
+    </select>
+  </form>
 </body>
+
 </html>
