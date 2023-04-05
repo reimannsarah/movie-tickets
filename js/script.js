@@ -8,7 +8,6 @@ function Movie (name, showtimes, firstRelease) {
   this.name = name;
   this.showtimes = showtimes;
   this.firstRelease = firstRelease;
-  this.matinee = false;
   this.tickets = {};
 }
 
@@ -46,30 +45,32 @@ movieArray.map(function(movie){
 
 function handleFormSubmit(event) {
   event.preventDefault();
-  let movie = document.querySelector("#movie-options").value;
-  let showtime = document.querySelector("#showtime-options").value;
+  // let movieInput = document.querySelector("#movie-options").value;
+  let showtimeChoice = document.querySelector("#showtime-options").value;
   let ticketChoice = document.querySelector("#ticket-options").value.toLowerCase();
 
-  const ticketKeys = Object.keys(ticket);
-  ticketKeys.forEach(function (ticketKey) {
-    // if (movie.firstRelease == true && movie.matinee == false){
-      // let price = displayPrice(ticketKey);
-      // console.log(price);
+  movieArray.map(function(movie){
+    document.querySelector("#movie-options").value = movie;
+    console.log(movie);
+      if(movie.firstRelease === true && movie.showtimes === "11am") {
+      console.log("fart");
+      }else if(movie.firstRelease === false && movie.showtimes === "11am"){
+        console.log("butts");
+      }else if(movie.firstRelease === true && movie.showtimes !== "11am"){
+        console.log ("salad");
+      }else if (movie.firstRelease === false && movie.showtimes !== "11am"){
+        console.log("crank");
+      }
+})
 
-    });
-    // if(key === ticketChoice){
-    //   displayPrice(key, )
-    //   console.log(ticket[key]);
-    // }
-  // });
-}
+  }
+
 
 let displayPriceDiv = document.querySelector("#displayPrice");
 let pPrice = document.createElement("p");
 
 function displayPrice(key) {
   pPrice.append(`Dennis quoted you for $${ticket[key]} :)`);
-  console.log(pPrice);
   displayPriceDiv.append(pPrice);
 }
 
